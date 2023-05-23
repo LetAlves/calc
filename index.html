@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="calculadora.css">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>   
+    <link href = "https: //fonts.googleapis.com/css2? family = Abrir + Sans: wght @ 300 & display = swap "rel =" stylesheet ">
+    <title>Calculadora Online</title>
+</head>
+<body>
+    <header> 
+        <div class="logo"><img src="./images/Calculadora.png" alt="logo"></div>
+        <div class="menu">
+        <nav>
+
+            <ul id="menu">
+            
+                <li><a href="index.html" target="_self">Ínicio</a></li>
+                <li><a href="bhaskara.html" target="_self">Bhaskara</a></li>
+                <li><a href="#" target="_self">Calculadoras</a>
+                    <ul>
+                        <li><a href="calculadora.html" target="_self">Básica</a></li>
+                        <li><a href="calculadora cient.html" target="_self">Científica</a></li>
+                    </ul>
+                </li>   
+
+            </ul>
+        </nav>    
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-txt" placeholder="Pesquisar">
+            <a href="#" class="search-btn">
+                <img src="./images/loupe.png" alt="Lupa" height="20" width="20" >
+            </a> 
+        </div>
+    </header>
+    <div class="inicio">
+        <h1>Bem vindo!</h1>
+        <p class="objetivo-inicial">Nossa Calculadora Online é um site para realizar contas matemáticas, disponibilizamos calculadora básica, calculadora científica, conversor de moedas, conversor de temperatura e etc, foi tudo planejado para os estudantes, que utilizam calculadoras e fazem cálculos a todo momento.
+            <br>Os estudantes que se interessam por bhaskara poderão, com nosso site ter todo material principal para um melhor entendimento. 
+            <br>Buscamos fazer um site de fácil acesso, prático, explicativo, com calculadoras modernas e precisas.</p>
+        <img class="img-inicio" src="./images/imagem inicio.jpg" alt="calculadora">
+        <div class="container">
+            <h2>Conversor de Moedas</h2>
+            <div class="box">
+                <div class="left-box">
+                    <select name="currency" class="currency"></select>
+                    <input type="number" name="" id="num">
+                </div>
+                <div class="right-box">
+                    <select name="currency" class="currency"></select>
+                    <input type="text" name="" id="ans" disabled>
+                </div>
+            </div>
+            <button class="btn" id="btn">Converter</button>
+        </div>
+        <div class="bandeiras"> 
+            <img src="./images/Bandeiras.png" alt="Bandeiras das moedas" onmouseover="this.src='Bandeiras-2.png'" onmouseout="this.src='Bandeiras.png'"> 
+        </div>
+        <div class="conversor-temperatura">
+            <h2>Conversor de Temperatura</h2>
+                <input type="text" id="fahrenheit" class="input-2" placeholder="Fahrenheit" name="f" value="" />
+                <input type="text" id="celsius" class="input-2" placeholder="Celsius" name="c" value="" />
+
+                <button class="btn-2" id="convert">Converter</button>
+                <button class="btn-3" id="clear">Limpar</button>
+            
+        </div>
+        <div class="imc">
+            <h2>IMC</h2>
+                <div class="form">
+                    <label class="peso" for="">Peso(Kg)</label><br>
+                    <input class="peso" type="text" id="txtPeso" placeholder="Ex: 70.2">
+                    <label class="altura-nome" for="">Altura(m)</label><br>
+                    <input class="altura" type="text" id="txtAltura" placeholder="Ex: 1.7"><br>
+                    <input type="submit" value="Calcular" class="calcular" onclick="calcular()">
+                    <button type="reset" class="btn-4" onclick="limpar()">Limpar</button>
+                    
+                </div>
+                <p id="resultado">.</p>
+                <div class="categorias">
+                    <div id="magreza">MAGREZA</div> 
+                    <div id="normal">NORMAL</div>
+                    <div id="sobrepeso">SOBREPESO</div>
+                    <div id="obesidade">OBESIDADE</div>
+                    <div id="obesidadegrave">OBESIDADE GRAVE</div>
+                </div>
+        </div>
+    </div>
+    
+    <div class="integrantes">
+        <h1 class="h1-integrantes">Integrantes do grupo</h1>
+        <img class="Matheus"src="./images/Matheus.jpeg">
+        <img class="Alves" src="./images/Alves.jpeg">
+        <img class="Kethellyn"src="./images/Kethellyn.jpeg">
+        <img class="Portela" src="./images/Portela.jpeg">
+        <img class="Amanda" src="./images/Amanda.jpeg">
+        <img class="Oliveira" src="./images/Oliveira.jpeg">
+
+        <h2 class="nomes, nome-matheus">Matheus Duarte</h2>
+        <h2 class="nomes, nome-alves">Letícia Carvalho</h2>
+        <h2 class="nomes, nome-kethellyn">Kethellyn Katarinne</h2>
+        <h2 class="nomes, nome-portela">Fellipe Portela</h2>
+        <h2 class="nomes, nome-amanda">Amanda Faccioli</h2>
+        <h2 class="nomes, nome-oliveira">Letícia Oliveira</h2>
+
+    </div>
+    <footer id="inicio">
+        <p>Copyright<strong> ©</strong> 2021 Calculadora Online | Powered by Calculadora Online</p>
+    </footer>
+    
+    +
+    <script src="conversor.js"></script>
+    <script src="imc.js"></script>
+    <script src="temperatura.js"></script>
+   
+</body>
+</html>

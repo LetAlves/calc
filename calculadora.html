@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="calculadora.css">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>   
+    <link href = "https: //fonts.googleapis.com/css2? family = Abrir + Sans: wght @ 300 & display = swap "rel =" stylesheet ">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="script.js">
+    <title>Calculadora Básica Online</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="./images/Calculadora.png" alt="logo"></div>
+        <div class="menu">
+        <nav>
+            <ul id="menu">
+            
+                <li><a href="index.html" target="_self">Ínicio</a></li>
+                <li><a href="bhaskara.html" target="_self">Bhaskara</a></li>
+                <li><a href="#" target="_self">Calculadoras</a>
+                    <ul>
+                        <li><a href="calculadora.html" target="_self">Básica</a></li>
+                        <li><a href="calculadora cient.html" target="_self">Científica</a></li>
+                    </ul>
+                </li>   
+                 
+            </ul>
+        </nav>    
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-txt" placeholder="Pesquisar">
+            <a href="#" class="search-btn">
+                <img src="./images/loupe.png" alt="Lupa" height="20" width="20" >
+            </a> 
+        </div>
+    </header>
+    <div class="inicio-cb">
+        <h1>Calculadora Básica</h1>
+        <p class="objetivo-inicial">Calculadora Online é um site onde você pode fazer calculos básicos diretamente no browser do seu computador.
+           Aí está a calculadora básica, todas suas funções estão abaixo. No nosso site, você também pode explorar outras calculadoras como calculadora científica, conversor de moedas e outras mais.
+            Basta navegar no nosso menu acima.
+        </p>
+    </div>
+
+    <div class="Calculadora">
+        <form action=" " name="Calculator">
+
+            <input type="text" class="text maincolo1" name="text1" disabled>
+            <input type="text" class="text1 maincolo2" name="text12" value="C" onclick="location.reload()"><br>
+
+            <input type="button" class="num maincolor" name="btn9" value="9" onclick="displaynum(btn9.value)">
+            <input type="button" class="num maincolor" name="btn8" value="8" onclick="displaynum(btn8.value)">
+            <input type="button" class="num maincolor" name="btn7" value="7" onclick="displaynum(btn7.value)">
+            <input type="button" class="num blue"     name="addbtn" value="+" onclick="displaynum(addbtn.value)"><br>
+
+            <input type="button" class="num maincolor" name="btn6" value="6" onclick="displaynum(btn6.value)">
+            <input type="button" class="num maincolor" name="btn5" value="5" onclick="displaynum(btn5.value)">
+            <input type="button" class="num maincolor" name="btn4" value="4" onclick="displaynum(btn4.value)">
+            <input type="button" class="num pin" name="subbtn" value="-" onclick="displaynum(subbtn.value)"><br>
+
+            <input type="button" class="num maincolor" name="btn3" value="3" onclick="displaynum(btn3.value)">
+            <input type="button" class="num maincolor" name="btn2" value="2" onclick="displaynum(btn2.value)">
+            <input type="button" class="num maincolor" name="btn1" value="1" onclick="displaynum(btn1.value)">
+            <input type="button" class="num gre" name="mulbtn" value="*" onclick="displaynum(mulbtn.value)"><br>
+
+            <input type="button" class="num maincolo3" name="dot" value="." onclick="displaynum(dot.value)">
+            <input type="button" class="num maincolor" name="btn0" value="0" onclick="displaynum(btn0.value)">
+            <input type="button" class="num pur" name="eqlbtn" value="=" onclick="text1.value=eval(text1.value)">
+            <input type="button" class="num ora" name="divbtn" value="/" onclick="displaynum(divbtn.value)"><br>
+        </form>
+    </div>
+    
+    <div class="table">
+        <div class="funcoes">
+            <div class="row-funcoes">
+            <h2>Funções</h2>
+            </div>
+        </div>
+        <table>
+            <tr class="titulo">
+                <td class="bt">Botão</td>
+                <td class="bt">Função</td>
+            </tr>
+            <tr>
+                <td class="a, bt"><strong>C</strong></td>
+                <td class="a, td-1">Finaliza a conta</td>
+                
+            </tr>
+            <tr>
+                <td class="b, bt"><strong>+</strong></td>
+                <td class="b, td">Utilizado para fazer soma</td>
+                
+            </tr>
+            <tr>
+                <td class="a, bt"><strong>-</strong></td>
+                <td class="a, td-1">Utilizado para fazer subtração</td>
+                
+            </tr>
+            <tr>
+                <td class="b, bt"><strong>*</strong></td>
+                <td class="b, td">Utilizado para fazer multiplicação</td>
+                
+            </tr>
+            <tr>
+                <td class="a, bt"><strong>/</strong></td>
+                <td class="a, td-1">Utilizado para fazer divisão</td>
+                
+            </tr>
+            <tr>
+                <td class="b, bt"><strong>=</strong></td>
+                <td class="b, td">Utilizado para dar o resultado final</td>
+               
+            </tr>
+        
+        </table>
+    </div>
+    
+    <footer id="calculadora-basica">
+        <p>Copyright<strong> ©</strong> 2021 Calculadora Online | Powered by Calculadora Online</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

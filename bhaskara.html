@@ -1,0 +1,121 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="calculadora.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>   
+    <link href = "https: //fonts.googleapis.com/css2? family = Abrir + Sans: wght @ 300 & display = swap "rel =" stylesheet ">
+    <title>Bhaskara Online</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="./images/Calculadora.png" alt="logo"></div>
+        <div class="menu">
+        <nav>
+            <ul id="menu">
+            
+                <li><a href="index.html" target="_self">Ínicio</a></li>
+                <li><a href="bhaskara.html" target="_self">Bhaskara</a></li>
+                <li><a href="#" target="_self">Calculadoras</a>
+                    <ul>
+                        <li><a href="calculadora.html" target="_self">Básica</a></li>
+                        <li><a href="calculadora cient.html" target="_self">Científica</a></li>
+                    </ul>
+                </li>   
+                 
+            </ul>
+        </nav>    
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-txt" placeholder="Pesquisar">
+            <a href="#" class="search-btn">
+                <img src="./images/loupe.png" alt="Lupa" height="20" width="20" >
+            </a> 
+        </div>
+    </header>
+
+    <div class="inicio-bhaskara">
+        <h1 class="h1-b">Bhaskara</h1>
+        <img class="img-b" src="./images/inicio-bhaskara.png" height="333px" width="487px" alt="Conta de Bhaskara">
+    </div>
+    <div class="dados">
+        <p class="inicio-b">A Fórmula de Bhaskara é uma das funções matemáticas utilizada para <br>encontrar as raízes de uma equação de segundo grau.</p>
+        <p class="conta">x = (-b ± √∆) / 2.a</p>
+        <p class="formula">Cada letra ou símbolo da fórmula corresponde a um coeficiente,<br> em que “x” é a incógnita a ser descoberta.</p>
+    </div>
+    <div class="passos">
+        <h1 class="n-passo">1º Passo:</h1>
+        <p class="nome">Equação de Segundo Grau</p>
+        <p class="txt-1">Já que a Fórmula de Bhaskara é aplicada em equações de segundo grau,<br> o primeiro passo é entender como é a estrutura desse tipo de cálculo.
+            <br> Ele pode ser representado da seguinte maneira:</p>
+        <p class="conta-1">ax² + bx + c = 0</p>
+        <p class="txt-1-1">Se “x” é o valor a ser descoberto na equação, então os demais coeficientes — a, b e c — são conhecidos (na maioria dos casos) e representam números reais; sendo que “a” é diferente de 0. </p>
+        <p class="nome-ex">Exemplo:</p>
+        <p class="conta-ex">4x² + 2x – 6 = 0</p>
+        <p class="conta-ex-1">a = 4
+            b = 2
+            c  = - 6</p>
+    </div>
+    <div class="passos-2">
+        <h1 class="n-passo-2">2º Passo:</h1>
+        <p class="nome-2">Discriminante</p>
+        <p class="txt-2">O próximo passo, é encontrar o discriminante do cálculo, que é representado pela letra grega Delta (∆). 
+            A estrutura é a seguinte:</p>
+        <p class="conta-2">∆ = b² – 4.a.c</p>
+        <p class="txt-2-2">O valor numérico do Delta pode influenciar as raízes de três formas diferentes:</p>
+        <ul>
+            <li>∆ > 0, duas raízes reais e distintas</li>
+            <li>∆ = 0, duas raízes reais e iguais</li>
+            <li>∆ < 0, não tem raízes reais</li>
+        </ul>
+        <p class="txt-2-3">Com o intuito de facilitar o seu entendimento, vamos utilizar os mesmos números do passo anterior para chegar ao valor do discriminante.   a = 4, b = 2 e c = -6, ∆ será:</p>
+        <p class="nome-ex-2">Exemplo:</p>
+        <p class="conta-ex-2">∆ = b² – 4.a.c<br>
+            ∆ = 2² – 4.4.(-6)<br>
+            ∆ = 4 – 16.(-6)<br>
+            ∆ = 4 + 96<br>
+            ∆ = 100</p>
+        <p class="conta-ex-2-2">Então, o discriminante da equação<br> 4x² + 2x – 6 = 0 equivale a ∆ = 100.</p>
+    </div>
+    <div class="passos-3">
+        <h1 class="n-passo-3">3º Passo:</h1>
+        <p class="nome-3">Fórmula de Bhaskara</p>
+        <p class="txt-3">Agora que já temos todos os elementos necessários, é hora de substituir os valores numéricos de cada coeficiente e do delta na Fórmula de Bhaskara.
+            Lembra que o cálculo tem o sinal de ±? Isso significa que precisamos fazer duas operações: uma de adição e outra de subtração. Assim:</p>
+        <p class="conta-3">x1 = (-b + √∆) / 2.4</p>
+        <p class="conta-3-1">x2 = (-b - √∆) / 2.4</p>
+        <p class="nome-ex-3">Exemplo:</p>
+        <p class="conta-ex-3">Lembrando que a = 4, b = 2, c = -6 e ∆ = 100 <br> para a equação 4x² + 2x – 6 = 0, <br>a Fórmula de Bhaskara ficaria assim:</p>
+        <p class="conta-ex-3-1">x1 = (-2 + √100) / (2.4) = 8 / 8 = 1<br>
+            x2 = (-2 – √100) / (2.4) = -12 / 8 = -1,5</p>
+        <p class="conta-ex-3-2">As raízes dessa equação correspondem aos valores 1 e -1,5.</p>
+    </div>
+    <div class="calculo">
+        <h1>Vamos calcular?</h1>
+        <p class="explicacao-b">Para encontrar as raízes da equação, digite o número A, B e C, respectivamente.</p>
+        <form class="input-bhaskara"action="">
+            <label for="">A</label>
+            <input id="a" type="number" placeholder="Ex: 4">
+            <label for="">B</label>
+            <input id="b" type="number" placeholder="Ex: 2">
+            <label for="">C</label>
+            <input id="c" type="number" placeholder="Ex: -6"> 
+            <button class="btn-bhaskara" onclick="calcularBhaskara(event)">Calcular</button>
+        </form>
+    
+        <p id="resultado-bhaskara">Resultado: </p>
+      </div>
+    <div class="importancia">
+        <p>É tão importante decorar a Fórmula de Bhaskara para o Enem e o vestibular, 
+            como entender suas aplicações em cálculos matemáticos. <br>Quanto mais você se 
+            familiarizar com o uso, mais fácil será resolver os problemas nas provas.</p>
+    </div>
+    <footer id="bhaskara">
+        <p>Copyright<strong> ©</strong> 2021 Calculadora Online | Powered by Calculadora Online</p>
+    </footer>
+    <script src="bhaskara.js"></script>
+</body>  
+</html>
